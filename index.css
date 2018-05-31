@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    margin: 0 auto;
+    width: 50%;
+    height: 800px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.main .main-left,
+.main .main-right {
+    width: 200px;
+    background-color: #f1f1f1;
+}
+
+.main .main-left .item,
+.main .main-right .item {
+    background-color: #999;
+    border: 1px solid #fff;
+    height: 50px;
+    cursor: pointer;
+    color: #fff;
+    text-align: center;
+}
+
+.main svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.main .path-item:hover {
+    stroke-width: 4;
+    stroke: #818181;
+}
+
+.context-menu {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 112px;
+    height: auto;
+    z-index: 99;
+    transition: all 0.3s ease-in;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+}
+
+.context-menu.hide {
+    display: none;
+}
+
+.context-menu button {
+    display: block;
+    -webkit-appearance: none;
+    outline: none;
+    border: none;
+    color: #333;
+    line-height: 28px;
+    box-sizing: border-box;
+    width: 98px;
+    height: 28px;
+    margin: 0 auto;
+    border-radius: 4px;
+    background-color: transparent;
+    transition: all 0.4s ease;
+    font-size: 0;
+    text-align: center;
+}
+
+.context-menu button:hover {
+    background-color: #edecec;
+}
+
+.context-menu button .context-menu-text {
+    font-size: 12px;
+    color: #67728C;
+    display: inline-block;
+    width: 4em;
+}
